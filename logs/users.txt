@@ -1,4 +1,10 @@
 {
+    Id:-1
+    ImagePaths:
+    Name:Unknown
+    NextImageId:0
+}
+{
     Id:0
     ImagePaths:
     Name:Carlos W
