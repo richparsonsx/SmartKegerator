@@ -1,0 +1,30 @@
+{
+    Id:0
+    ImagePaths:
+    Name:Carlos W
+    NextImageId:0
+}
+{
+    Id:1
+    ImagePaths:
+    Name:Carlos
+    NextImageId:0
+}
+{
+    Id:2
+    ImagePaths:
+    Name:Mayling
+    NextImageId:0
+}
+{
+    Id:3
+    ImagePaths:
+    Name:Noah
+    NextImageId:0
+}
+{
+    Id:4
+    ImagePaths:
+    Name:Camille
+    NextImageId:0
+}

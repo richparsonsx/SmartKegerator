@@ -1,0 +1,45 @@
+{
+    Id:0
+    KegId:6
+    Ounces:32.27051
+    PriceModifier:1.00000
+    Ticks:400
+    Time:1444971978.00000
+    UserId:-1
+}
+{
+    Id:1
+    KegId:6
+    Ounces:32.27051
+    PriceModifier:1.00000
+    Ticks:400
+    Time:1444972215.00000
+    UserId:-1
+}
+{
+    Id:2
+    KegId:4
+    Ounces:4.73396
+    PriceModifier:1.00000
+    Ticks:70
+    Time:1444974517.00000
+    UserId:-1
+}
+{
+    Id:3
+    KegId:6
+    Ounces:7.91248
+    PriceModifier:1.00000
+    Ticks:117
+    Time:1444974533.00000
+    UserId:2
+}
+{
+    Id:4
+    KegId:9
+    Ounces:6.22178
+    PriceModifier:1.00000
+    Ticks:92
+    Time:1445196960.00000
+    UserId:-1
+}

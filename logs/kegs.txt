@@ -1,0 +1,47 @@
+{
+    LeftKegId:7
+    CenterLeftKegId:8
+    CenterKegId:9
+    CenterRightKegId:10
+    RightKegId:11
+}
+{
+    BeerId:0
+    DateBought:10/01/15
+    Id:7
+    LitersCapacity:18.92705
+    Price:120.00000
+    WarmestTemp:0.00000
+}
+{
+    BeerId:1
+    DateBought:10/10/15
+    Id:8
+    LitersCapacity:18.92705
+    Price:105.00000
+    WarmestTemp:0.00000
+}
+{
+    BeerId:2
+    DateBought:10/05/15
+    Id:9
+    LitersCapacity:18.92705
+    Price:140.00000
+    WarmestTemp:0.00000
+}
+{
+    BeerId:3
+    DateBought:8/15/15
+    Id:10
+    LitersCapacity:18.92705
+    Price:120.00000
+    WarmestTemp:0.00000
+}
+{
+    BeerId:4
+    DateBought:10/10/15
+    Id:11
+    LitersCapacity:18.92705
+    Price:90.00000
+    WarmestTemp:0.00000
+}

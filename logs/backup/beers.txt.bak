@@ -1,0 +1,45 @@
+{
+    ABV:5.80000
+    Company:El Clandestino Porter
+    IBU:43
+    Id:0
+    Location:San Antonio, Porter
+    Name:Coffee Porter
+    Type:Porter
+}
+{
+    ABV:4.80000
+    Company:El Clandestino Blonde
+    IBU:24
+    Id:1
+    Location:San Antonio, Blonde
+    Name:Yellow-Bellied Blonde Ale
+    Type:Blonde Ale
+}
+{
+    ABV:7.10000
+    Company:El Clandestino IPA
+    IBU:62
+    Id:2
+    Location:San Antonio, IPA
+    Name:Citra IPA
+    Type:IPA
+}
+{
+    ABV:5.80000
+    Company:El Clandestino Saison
+    IBU:29
+    Id:3
+    Location:San Antonio, Saison
+    Name:Saison
+    Type:Saison
+}
+{
+    ABV:4.80000
+    Company:El Clandestino Naranjilla
+    IBU:24
+    Id:4
+    Location:San Antonio, Naranjilla
+    Name:Naranjilla Blonde
+    Type:Blonde Ale
+}
