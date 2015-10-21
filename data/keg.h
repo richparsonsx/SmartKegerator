@@ -13,9 +13,9 @@ public:
     static map<int, Keg*> KegsById;
 
     static Keg* LeftKeg;
-    static Keg* CenterLeftKeg;
+    static Keg* IzqCentroKeg;
     static Keg* CenterKeg;
-    static Keg* CenterRightKeg;
+    static Keg* DerCentroKeg;
     static Keg* RightKeg;
 
     static Keg* AddKeg(int beerId, string dateBought, float liters, float price);

@@ -54,17 +54,17 @@ MainWindow::MainWindow(QWidget *parent) :
                                   ui->leftBoughtField,
                                   ui->leftEmptyField,
                                   ui->remainingLeftField);
-    centerLeftDisplay = new BeerDisplay(ui->centerLeftKegFill,
-                                  //ui->centerLeftLogo,
-                                  ui->centerLeftBeerNameField,
-                                  ui->centerLeftBeerCompanyField,
-                                  ui->centerLeftCityField,
-                                  ui->centerLeftPriceField,
-                                  ui->centerLeftAbvField,
-                                  ui->centerLeftIbuField,
-                                  ui->centerLeftBoughtField,
-                                  ui->centerLeftEmptyField,
-                                  ui->remainingCenterLeftField);
+    izqCentroDisplay = new BeerDisplay(ui->izqCentroKegFill,
+                                  //ui->izqCentroLogo,
+                                  ui->izqCentroBeerNameField,
+                                  ui->izqCentroBeerCompanyField,
+                                  ui->izqCentroCityField,
+                                  ui->izqCentroPriceField,
+                                  ui->izqCentroAbvField,
+                                  ui->izqCentroIbuField,
+                                  ui->izqCentroBoughtField,
+                                  ui->izqCentroEmptyField,
+                                  ui->remainingIzqCentroField);
     centerDisplay = new BeerDisplay(ui->centerKegFill,
                                    //ui->centerLogo,
                                    ui->centerBeerNameField,
@@ -76,17 +76,17 @@ MainWindow::MainWindow(QWidget *parent) :
                                    ui->centerBoughtField,
                                    ui->centerEmptyField,
                                    ui->remainingCenterField);
-    centerRightDisplay = new BeerDisplay(ui->centerRightKegFill,
-                                   //ui->centerRightLogo,
-                                   ui->centerRightBeerNameField,
-                                   ui->centerRightBeerCompanyField,
-                                   ui->centerRightCityField,
-                                   ui->centerRightPriceField,
-                                   ui->centerRightAbvField,
-                                   ui->centerRightIbuField,
-                                   ui->centerRightBoughtField,
-                                   ui->centerRightEmptyField,
-                                   ui->remainingCenterRightField);
+    derCentroDisplay = new BeerDisplay(ui->derCentroKegFill,
+                                   //ui->derCentroLogo,
+                                   ui->derCentroBeerNameField,
+                                   ui->derCentroBeerCompanyField,
+                                   ui->derCentroCityField,
+                                   ui->derCentroPriceField,
+                                   ui->derCentroAbvField,
+                                   ui->derCentroIbuField,
+                                   ui->derCentroBoughtField,
+                                   ui->derCentroEmptyField,
+                                   ui->remainingDerCentroField);
     rightDisplay = new BeerDisplay(ui->rightKegFill,
                                    //ui->rightLogo,
                                    ui->rightBeerNameField,
@@ -206,15 +206,15 @@ void MainWindow::updateBeers()
 {
     // Update displays
     leftDisplay->update(Keg::LeftKeg);
-    centerLeftDisplay->update(Keg::CenterLeftKeg);
+    izqCentroDisplay->update(Keg::IzqCentroKeg);
     centerDisplay->update(Keg::CenterKeg);
-    centerRightDisplay->update(Keg::CenterRightKeg);
+    derCentroDisplay->update(Keg::DerCentroKeg);
     rightDisplay->update(Keg::RightKeg);
 
     ui->leftBeerStatsFrame->SetKeg(Keg::LeftKeg);
-    ui->centerLeftBeerStatsFrame->SetKeg(Keg::CenterLeftKeg);
+    ui->izqCentroBeerStatsFrame->SetKeg(Keg::IzqCentroKeg);
     ui->centerBeerStatsFrame->SetKeg(Keg::CenterKeg);
-    ui->centerRightBeerStatsFrame->SetKeg(Keg::CenterRightKeg);
+    ui->derCentroBeerStatsFrame->SetKeg(Keg::DerCentroKeg);
     ui->rightBeerStatsFrame->SetKeg(Keg::RightKeg);
 }
 
@@ -232,9 +232,9 @@ void MainWindow::ShowWindow()
 {
     hidden = false;
     ui->leftBeerStatsFrame->AutoScrollEnabled = true;
-    ui->centerLeftBeerStatsFrame->AutoScrollEnabled = true;
+    ui->izqCentroBeerStatsFrame->AutoScrollEnabled = true;
     ui->centerBeerStatsFrame->AutoScrollEnabled = true;
-    ui->centerRightBeerStatsFrame->AutoScrollEnabled = true;
+    ui->derCentroBeerStatsFrame->AutoScrollEnabled = true;
     ui->rightBeerStatsFrame->AutoScrollEnabled = true;
     updateBeers();
     updateUI();
@@ -255,9 +255,9 @@ void MainWindow::HideWindow()
 {
     hidden = true;
     ui->leftBeerStatsFrame->AutoScrollEnabled = false;
-    ui->centerLeftBeerStatsFrame->AutoScrollEnabled = false;
+    ui->izqCentroBeerStatsFrame->AutoScrollEnabled = false;
     ui->centerBeerStatsFrame->AutoScrollEnabled = false;
-    ui->centerRightBeerStatsFrame->AutoScrollEnabled = false;
+    ui->derCentroBeerStatsFrame->AutoScrollEnabled = false;
     ui->rightBeerStatsFrame->AutoScrollEnabled = false;
     //if (isHidden())
     //    return;

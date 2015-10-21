@@ -9,7 +9,7 @@
 
 using namespace std;
 
-enum BeerTapSide { LEFT_TAP, CENTER_LEFT_TAP, CENTER_TAP, CENTER_RIGHT_TAP, RIGHT_TAP };
+enum BeerTapSide { LEFT_TAP, IZQ_CENTRO_TAP, CENTER_TAP, DER_CENTRO_TAP, RIGHT_TAP };
 
 class Keg;
 
@@ -45,13 +45,13 @@ private:
     void beginPour(BeerTapSide);
 
     int flowMeterPinLeft;
-    int flowMeterPinCenterLeft;
+    int flowMeterPinIzqCentro;
     int flowMeterPinCenter;
-    int flowMeterPinCenterRight;
+    int flowMeterPinDerCentro;
     int flowMeterPinRight;
 
     string gpioWFICommand;
-    QString leftTickString, centerLeftTickString, centerTickString, centerRightTickString, rightTickString;
+    QString leftTickString, izqCentroTickString, centerTickString, derCentroTickString, rightTickString;
     QProcess* gpioProc;
     QTimer updateTimer;
 

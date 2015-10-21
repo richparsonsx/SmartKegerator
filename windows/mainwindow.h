@@ -58,9 +58,9 @@ private:
     bool hidden;
 
     BeerDisplay *leftDisplay;
-    BeerDisplay *centerLeftDisplay;
+    BeerDisplay *izqCentroDisplay;
     BeerDisplay *centerDisplay;
-    BeerDisplay *centerRightDisplay;
+    BeerDisplay *derCentroDisplay;
     BeerDisplay *rightDisplay;
 
     void onQuit();

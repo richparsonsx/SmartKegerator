@@ -5,16 +5,16 @@ def leftFlowMeterTick(signal):
 	print "Left beer tick!"
 	sys.stdout.flush()
 
-def centerLeftFlowMeterTick(signal):
-	print "Center left beer tick!"
+def izqCentroFlowMeterTick(signal):
+        print "Izquierda Center left beer tick!"
 	sys.stdout.flush()
 
 def centerFlowMeterTick(signal):
 	print "Center beer tick!"
 	sys.stdout.flush()
 
-def centerRightFlowMeterTick(signal):
-	print "Center right beer tick!"
+def derCentroFlowMeterTick(signal):
+        print "Derecha Center right beer tick!"
 	sys.stdout.flush()
 
 def rightFlowMeterTick(signal):
@@ -29,23 +29,23 @@ def main(argv):
 
 	# get params
 	leftPin = int(float(argv[0]))
-	centerLeftPin = int(float(argv[1]))
+	izqCentroPin = int(float(argv[1]))
 	centerPin = int(float(argv[2]))
-	centerRightPin = int(float(argv[3]))
+	derCentroPin = int(float(argv[3]))
 	rightPin = int(float(argv[4]))
 
 	# Setup GPIO
 	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(leftPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-	GPIO.setup(centerLeftPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	GPIO.setup(izqCentroPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	GPIO.setup(centerPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-	GPIO.setup(centerRightPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	GPIO.setup(derCentroPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	GPIO.setup(rightPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	
 	GPIO.add_event_detect(leftPin, GPIO.RISING, callback=leftFlowMeterTick, bouncetime=20)
-	GPIO.add_event_detect(centerLeftPin, GPIO.RISING, callback=centerLeftFlowMeterTick, bouncetime=20)
+	GPIO.add_event_detect(izqCentroPin, GPIO.RISING, callback=izqCentroFlowMeterTick, bouncetime=20)
 	GPIO.add_event_detect(centerPin, GPIO.RISING, callback=centerFlowMeterTick, bouncetime=20)
-	GPIO.add_event_detect(centerRightPin, GPIO.RISING, callback=centerRightFlowMeterTick, bouncetime=20)
+	GPIO.add_event_detect(derCentroPin, GPIO.RISING, callback=derCentroFlowMeterTick, bouncetime=20)
 	GPIO.add_event_detect(rightPin, GPIO.RISING, callback=rightFlowMeterTick, bouncetime=20)
 	
 	try:

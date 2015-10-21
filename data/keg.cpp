@@ -17,9 +17,9 @@ using namespace std;
 // Statics
 map<int, Keg*> Keg::KegsById;
 Keg* Keg::LeftKeg;
-Keg* Keg::CenterLeftKeg;
+Keg* Keg::IzqCentroKeg;
 Keg* Keg::CenterKeg;
-Keg* Keg::CenterRightKeg;
+Keg* Keg::DerCentroKeg;
 Keg* Keg::RightKeg;
 int Keg::NextId;
 
@@ -38,30 +38,30 @@ void Keg::LoadKegs()
     if (maps.size() > 0)
     {
         int leftId = -1;
-        int centerLeftId = -1;
+        int izqCentroId = -1;
         int centerId = -1;
-        int centerRightId = -1;
+        int derCentroId = -1;
         int rightId = -1;
 
         if (maps[0].find("LeftKegId") != maps[0].end())
             leftId = QString(maps[0]["LeftKegId"].c_str()).toInt();
 
-        if (maps[0].find("CenterLeftKegId") != maps[0].end())
-            centerLeftId = QString(maps[0]["CenterLeftKegId"].c_str()).toInt();
+        if (maps[0].find("IzqCentroKegId") != maps[0].end())
+            izqCentroId = QString(maps[0]["IzqCentroKegId"].c_str()).toInt();
 
         if (maps[0].find("CenterKegId") != maps[0].end())
             centerId = QString(maps[0]["CenterKegId"].c_str()).toInt();
 
-        if (maps[0].find("CenterRightKegId") != maps[0].end())
-            centerRightId = QString(maps[0]["CenterRightKegId"].c_str()).toInt();
+        if (maps[0].find("DerCentroKegId") != maps[0].end())
+            derCentroId = QString(maps[0]["DerCentroKegId"].c_str()).toInt();
 
         if (maps[0].find("RightKegId") != maps[0].end())
             rightId = QString(maps[0]["RightKegId"].c_str()).toInt();
 
         Keg::LeftKeg = leftId == -1 ? NULL : Keg::KegsById[leftId];
-        Keg::CenterLeftKeg = centerLeftId == -1 ? NULL : Keg::KegsById[centerLeftId];
+        Keg::IzqCentroKeg = izqCentroId == -1 ? NULL : Keg::KegsById[izqCentroId];
         Keg::CenterKeg = centerId == -1 ? NULL : Keg::KegsById[centerId];
-        Keg::CenterRightKeg = centerRightId == -1 ? NULL : Keg::KegsById[centerRightId];
+        Keg::DerCentroKeg = derCentroId == -1 ? NULL : Keg::KegsById[derCentroId];
         Keg::RightKeg = rightId == -1 ? NULL : Keg::KegsById[rightId];
     }
 }
@@ -73,9 +73,9 @@ void Keg::SaveKegs()
 
     str.append("{\r\n");
     str.append(QString("    LeftKegId:%1\r\n").arg(Keg::LeftKeg == NULL ? -1 : Keg::LeftKeg->Id).toStdString());
-    str.append(QString("    CenterLeftKegId:%1\r\n").arg(Keg::CenterLeftKeg == NULL ? -1 : Keg::CenterLeftKeg->Id).toStdString());
+    str.append(QString("    IzqCentroKegId:%1\r\n").arg(Keg::IzqCentroKeg == NULL ? -1 : Keg::IzqCentroKeg->Id).toStdString());
     str.append(QString("    CenterKegId:%1\r\n").arg(Keg::CenterKeg == NULL ? -1 : Keg::CenterKeg->Id).toStdString());
-    str.append(QString("    CenterRightKegId:%1\r\n").arg(Keg::CenterRightKeg == NULL ? -1 : Keg::CenterRightKeg->Id).toStdString());
+    str.append(QString("    DerCentroKegId:%1\r\n").arg(Keg::DerCentroKeg == NULL ? -1 : Keg::DerCentroKeg->Id).toStdString());
     str.append(QString("    RightKegId:%1\r\n").arg(Keg::RightKeg == NULL ? -1 : Keg::RightKeg->Id).toStdString());
     str.append("}\r\n");
 

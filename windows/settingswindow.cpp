@@ -83,13 +83,13 @@ int getSide()
     else
         choices.push_back(QString("Left tap\nEmpty").toStdString());
 
-    if (Keg::CenterLeftKeg != NULL)
+    if (Keg::IzqCentroKeg != NULL)
     {
-        Beer* beer = Beer::BeersById[Keg::CenterLeftKeg->BeerId];
-        choices.push_back(QString("CenterLeft tap\n%1 - %2").arg(beer->Company.c_str()).arg(beer->Name.c_str()).toStdString());
+        Beer* beer = Beer::BeersById[Keg::IzqCentroKeg->BeerId];
+        choices.push_back(QString("IzqCentro tap\n%1 - %2").arg(beer->Company.c_str()).arg(beer->Name.c_str()).toStdString());
     }
     else
-        choices.push_back(QString("CenterLeft tap\nEmpty").toStdString());
+        choices.push_back(QString("IzqCentro tap\nEmpty").toStdString());
 
     if (Keg::CenterKeg != NULL)
     {
@@ -99,13 +99,13 @@ int getSide()
     else
         choices.push_back(QString("Center tap\nEmpty").toStdString());
 
-    if (Keg::CenterRightKeg != NULL)
+    if (Keg::DerCentroKeg != NULL)
     {
-        Beer* beer = Beer::BeersById[Keg::CenterRightKeg->BeerId];
-        choices.push_back(QString("CenterRight tap\n%1 - %2").arg(beer->Company.c_str()).arg(beer->Name.c_str()).toStdString());
+        Beer* beer = Beer::BeersById[Keg::DerCentroKeg->BeerId];
+        choices.push_back(QString("DerCentro tap\n%1 - %2").arg(beer->Company.c_str()).arg(beer->Name.c_str()).toStdString());
     }
     else
-        choices.push_back(QString("CenterRight tap\nEmpty").toStdString());
+        choices.push_back(QString("DerCentro tap\nEmpty").toStdString());
 
     if (Keg::RightKeg != NULL)
     {
@@ -202,12 +202,12 @@ void SettingsWindow::on_addKegButton_clicked()
     int side = getSide();
     if (side == LEFT_TAP)
         Keg::LeftKeg = keg;
-    if (side == CENTER_LEFT_TAP)
-        Keg::CenterLeftKeg = keg;
+    if (side == IZQ_CENTRO_TAP)
+        Keg::IzqCentroKeg = keg;
     if (side == CENTER_TAP)
         Keg::CenterKeg = keg;
-    if (side == CENTER_RIGHT_TAP)
-        Keg::CenterRightKeg = keg;
+    if (side == DER_CENTRO_TAP)
+        Keg::DerCentroKeg = keg;
     if (side == RIGHT_TAP)
         Keg::RightKeg = keg;
 
@@ -221,11 +221,11 @@ void SettingsWindow::on_finishKegButton_clicked()
 
     if (choice == LEFT_TAP && Keg::LeftKeg != NULL)
         confirmed = QMessageBox::question(this, "Finish Keg", "Are you sure you want to finish the left keg?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes;
-    if (choice == CENTER_LEFT_TAP && Keg::CenterLeftKeg != NULL)
+    if (choice == IZQ_CENTRO_TAP && Keg::IzqCentroKeg != NULL)
         confirmed = QMessageBox::question(this, "Finish Keg", "Are you sure you want to finish the left keg?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes;
     if (choice == CENTER_TAP && Keg::CenterKeg != NULL)
         confirmed = QMessageBox::question(this, "Finish Keg", "Are you sure you want to finish the center keg?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes;
-    if (choice == CENTER_RIGHT_TAP && Keg::CenterRightKeg != NULL)
+    if (choice == DER_CENTRO_TAP && Keg::DerCentroKeg != NULL)
         confirmed = QMessageBox::question(this, "Finish Keg", "Are you sure you want to finish the right keg?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes;
     if (choice == RIGHT_TAP && Keg::RightKeg != NULL)
         confirmed = QMessageBox::question(this, "Finish Keg", "Are you sure you want to finish the right keg?", QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes;
@@ -234,18 +234,18 @@ void SettingsWindow::on_finishKegButton_clicked()
     {
         if (choice == LEFT_TAP)
             Keg::LeftKeg = NULL;
-        if (choice == CENTER_LEFT_TAP)
-            Keg::CenterLeftKeg = NULL;
+        if (choice == IZQ_CENTRO_TAP)
+            Keg::IzqCentroKeg = NULL;
         if (choice == CENTER_TAP)
             Keg::CenterKeg = NULL;
-        if (choice == CENTER_RIGHT_TAP)
-            Keg::CenterRightKeg = NULL;
+        if (choice == DER_CENTRO_TAP)
+            Keg::DerCentroKeg = NULL;
         if (choice == RIGHT_TAP)
             Keg::RightKeg = NULL;
 
         Keg::SaveKegs();
 
-        QMessageBox::information(this, QString("Keg Finished"), QString("%1 keg marked finished!").arg(choice == LEFT_TAP ? "Left" : choice == CENTER_LEFT_TAP ? "CenterLeft" : choice == CENTER_TAP ? "center" : choice == CENTER_RIGHT_TAP ? "CenterRight" : "Right"), QMessageBox::Ok);
+        QMessageBox::information(this, QString("Keg Finished"), QString("%1 keg marked finished!").arg(choice == LEFT_TAP ? "Left" : choice == IZQ_CENTRO_TAP ? "IzqCentro" : choice == CENTER_TAP ? "center" : choice == DER_CENTRO_TAP ? "DerCentro" : "Right"), QMessageBox::Ok);
     }
 }
 
@@ -345,12 +345,12 @@ void SettingsWindow::on_editKegButton_clicked()
     int side = getSide();
     if (side == LEFT_TAP)
         Keg::LeftKeg = keg;
-    if (side == CENTER_LEFT_TAP)
-        Keg::CenterLeftKeg = keg;
+    if (side == IZQ_CENTRO_TAP)
+        Keg::IzqCentroKeg = keg;
     if (side == CENTER_TAP)
         Keg::CenterKeg = keg;
-    if (side == CENTER_RIGHT_TAP)
-        Keg::CenterRightKeg = keg;
+    if (side == DER_CENTRO_TAP)
+        Keg::DerCentroKeg = keg;
     if (side == RIGHT_TAP)
         Keg::RightKeg = keg;
 

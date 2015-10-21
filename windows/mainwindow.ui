@@ -86,7 +86,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftBeerCompanyField">
+   <widget class="QLabel" name="izqCentroBeerCompanyField">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -176,7 +176,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightBeerNameField">
+   <widget class="QLabel" name="derCentroBeerNameField">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -235,7 +235,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightBeerCompanyField">
+   <widget class="QLabel" name="derCentroBeerCompanyField">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -306,7 +306,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftBeerNameField">
+   <widget class="QLabel" name="izqCentroBeerNameField">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -444,7 +444,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string notr="true">background-color: rgba(171, 170, 80, 100);</string>
     </property>
    </widget>
-   <widget class="QWidget" name="centerLeftKegFill" native="true">
+   <widget class="QWidget" name="izqCentroKegFill" native="true">
     <property name="geometry">
      <rect>
       <x>295</x>
@@ -470,7 +470,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string notr="true">background-color: rgba(171, 170, 80, 100);</string>
     </property>
    </widget>
-   <widget class="QWidget" name="centerRightKegFill" native="true">
+   <widget class="QWidget" name="derCentroKegFill" native="true">
     <property name="geometry">
      <rect>
       <x>615</x>
@@ -616,7 +616,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftPriceField">
+   <widget class="QLabel" name="izqCentroPriceField">
     <property name="geometry">
      <rect>
       <x>233</x>
@@ -672,7 +672,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftCityField">
+   <widget class="QLabel" name="izqCentroCityField">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -728,7 +728,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightCityField">
+   <widget class="QLabel" name="derCentroCityField">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -784,7 +784,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightPriceField">
+   <widget class="QLabel" name="derCentroPriceField">
     <property name="geometry">
      <rect>
       <x>556</x>
@@ -840,7 +840,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftIbuField">
+   <widget class="QLabel" name="izqCentroIbuField">
     <property name="geometry">
      <rect>
       <x>233</x>
@@ -896,7 +896,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftAbvField">
+   <widget class="QLabel" name="izqCentroAbvField">
     <property name="geometry">
      <rect>
       <x>233</x>
@@ -952,7 +952,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftBoughtField">
+   <widget class="QLabel" name="izqCentroBoughtField">
     <property name="geometry">
      <rect>
       <x>233</x>
@@ -1008,7 +1008,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftEmptyField">
+   <widget class="QLabel" name="izqCentroEmptyField">
     <property name="geometry">
      <rect>
       <x>233</x>
@@ -1064,7 +1064,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightIbuField">
+   <widget class="QLabel" name="derCentroIbuField">
     <property name="geometry">
      <rect>
       <x>556</x>
@@ -1120,7 +1120,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightAbvField">
+   <widget class="QLabel" name="derCentroAbvField">
     <property name="geometry">
      <rect>
       <x>556</x>
@@ -1176,7 +1176,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightBoughtField">
+   <widget class="QLabel" name="derCentroBoughtField">
     <property name="geometry">
      <rect>
       <x>556</x>
@@ -1232,7 +1232,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightEmptyField">
+   <widget class="QLabel" name="derCentroEmptyField">
     <property name="geometry">
      <rect>
       <x>556</x>
@@ -1276,7 +1276,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="BeerStatsFrame" name="centerRightBeerStatsFrame">
+   <widget class="BeerStatsFrame" name="derCentroBeerStatsFrame">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -1308,7 +1308,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="BeerStatsFrame" name="centerLeftBeerStatsFrame">
+   <widget class="BeerStatsFrame" name="izqCentroBeerStatsFrame">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -1525,7 +1525,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftPriceLabel">
+   <widget class="QLabel" name="izqCentroPriceLabel">
     <property name="geometry">
      <rect>
       <x>171</x>
@@ -1553,7 +1553,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftIBULabel">
+   <widget class="QLabel" name="izqCentroIBULabel">
     <property name="geometry">
      <rect>
       <x>171</x>
@@ -1581,7 +1581,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftABVLabel">
+   <widget class="QLabel" name="izqCentroABVLabel">
     <property name="geometry">
      <rect>
       <x>171</x>
@@ -1609,7 +1609,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftKegPurchaseLabel">
+   <widget class="QLabel" name="izqCentroKegPurchaseLabel">
     <property name="geometry">
      <rect>
       <x>171</x>
@@ -1637,7 +1637,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftKegEmptyLabel">
+   <widget class="QLabel" name="izqCentroKegEmptyLabel">
     <property name="geometry">
      <rect>
       <x>171</x>
@@ -1805,7 +1805,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightIBULabel">
+   <widget class="QLabel" name="derCentroIBULabel">
     <property name="geometry">
      <rect>
       <x>493</x>
@@ -1833,7 +1833,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightABVLabel">
+   <widget class="QLabel" name="derCentroABVLabel">
     <property name="geometry">
      <rect>
       <x>493</x>
@@ -1861,7 +1861,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightKegPurchaseLabel">
+   <widget class="QLabel" name="derCentroKegPurchaseLabel">
     <property name="geometry">
      <rect>
       <x>493</x>
@@ -1917,7 +1917,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightPriceLabel">
+   <widget class="QLabel" name="derCentroPriceLabel">
     <property name="geometry">
      <rect>
       <x>493</x>
@@ -2017,7 +2017,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="remainingCenterLeftField">
+   <widget class="QLabel" name="remainingIzqCentroField">
     <property name="geometry">
      <rect>
       <x>295</x>
@@ -2073,7 +2073,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="remainingCenterRightField">
+   <widget class="QLabel" name="remainingDerCentroField">
     <property name="geometry">
      <rect>
       <x>615</x>
@@ -2772,7 +2772,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftBackgroundTitleName">
+   <widget class="QLabel" name="izqCentroBackgroundTitleName">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -2785,7 +2785,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftBeerStatsBackground">
+   <widget class="QLabel" name="izqCentroBeerStatsBackground">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -2798,7 +2798,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightBeerStatsBackground">
+   <widget class="QLabel" name="derCentroBeerStatsBackground">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -2811,7 +2811,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftInfoBackground">
+   <widget class="QLabel" name="izqCentroInfoBackground">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -2824,7 +2824,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightBackground">
+   <widget class="QLabel" name="derCentroBackground">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -2837,7 +2837,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightBackgroundTitleName">
+   <widget class="QLabel" name="derCentroBackgroundTitleName">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -2850,7 +2850,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerLeftKegBackground">
+   <widget class="QLabel" name="izqCentroKegBackground">
     <property name="geometry">
      <rect>
       <x>295</x>
@@ -2869,7 +2869,7 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="centerRightKegBackground">
+   <widget class="QLabel" name="derCentroKegBackground">
     <property name="geometry">
      <rect>
       <x>615</x>
@@ -2888,38 +2888,38 @@ QScrollBar:horizontal, QScrollBar:vertical
      <string/>
     </property>
    </widget>
-   <zorder>centerRightBackgroundTitleName</zorder>
-   <zorder>centerRightKegBackground</zorder>
-   <zorder>centerRightBackground</zorder>
-   <zorder>centerRightKegFill</zorder>
-   <zorder>centerRightBeerStatsFrame</zorder>
+   <zorder>derCentroBackgroundTitleName</zorder>
+   <zorder>derCentroKegBackground</zorder>
+   <zorder>derCentroBackground</zorder>
+   <zorder>derCentroKegFill</zorder>
+   <zorder>derCentroBeerStatsFrame</zorder>
    <zorder>rightBeerStatsFrame</zorder>
-   <zorder>centerRightBeerStatsBackground</zorder>
+   <zorder>derCentroBeerStatsBackground</zorder>
    <zorder>centerBeerStatsFrame</zorder>
-   <zorder>centerLeftBeerStatsFrame</zorder>
+   <zorder>izqCentroBeerStatsFrame</zorder>
    <zorder>leftBeerStatsFrame</zorder>
    <zorder>temperatureButton</zorder>
    <zorder>humidityButton</zorder>
    <zorder>rightInfoBackground</zorder>
    <zorder>rightKegBackground</zorder>
    <zorder>rightKegFill</zorder>
-   <zorder>centerLeftInfoBackground</zorder>
-   <zorder>centerLeftKegBackground</zorder>
+   <zorder>izqCentroInfoBackground</zorder>
+   <zorder>izqCentroKegBackground</zorder>
    <zorder>leftInfoBackground</zorder>
    <zorder>rightBackgroundTitleName</zorder>
    <zorder>rightBeerStatsBackground</zorder>
-   <zorder>centerLeftBeerStatsBackground</zorder>
-   <zorder>centerLeftBackgroundTitleName</zorder>
-   <zorder>centerLeftPriceLabel</zorder>
-   <zorder>centerLeftIBULabel</zorder>
-   <zorder>centerLeftABVLabel</zorder>
-   <zorder>centerLeftKegPurchaseLabel</zorder>
-   <zorder>centerLeftKegEmptyLabel</zorder>
-   <zorder>centerRightIBULabel</zorder>
-   <zorder>centerRightABVLabel</zorder>
-   <zorder>centerRightKegPurchaseLabel</zorder>
+   <zorder>izqCentroBeerStatsBackground</zorder>
+   <zorder>izqCentroBackgroundTitleName</zorder>
+   <zorder>izqCentroPriceLabel</zorder>
+   <zorder>izqCentroIBULabel</zorder>
+   <zorder>izqCentroABVLabel</zorder>
+   <zorder>izqCentroKegPurchaseLabel</zorder>
+   <zorder>izqCentroKegEmptyLabel</zorder>
+   <zorder>derCentroIBULabel</zorder>
+   <zorder>derCentroABVLabel</zorder>
+   <zorder>derCentroKegPurchaseLabel</zorder>
    <zorder>centerRigthKegEmptyLabel</zorder>
-   <zorder>centerRightPriceLabel</zorder>
+   <zorder>derCentroPriceLabel</zorder>
    <zorder>leftBackgroundTitleName</zorder>
    <zorder>centerInfoBackground</zorder>
    <zorder>centerBeerStatsBackground</zorder>
@@ -2936,21 +2936,21 @@ QScrollBar:horizontal, QScrollBar:vertical
    <zorder>centerIbuField</zorder>
    <zorder>centerKegBackground</zorder>
    <zorder>centerKegFill</zorder>
-   <zorder>centerLeftAbvField</zorder>
-   <zorder>centerLeftBoughtField</zorder>
-   <zorder>centerLeftEmptyField</zorder>
-   <zorder>centerLeftIbuField</zorder>
-   <zorder>centerLeftKegFill</zorder>
-   <zorder>centerLeftPriceField</zorder>
+   <zorder>izqCentroAbvField</zorder>
+   <zorder>izqCentroBoughtField</zorder>
+   <zorder>izqCentroEmptyField</zorder>
+   <zorder>izqCentroIbuField</zorder>
+   <zorder>izqCentroKegFill</zorder>
+   <zorder>izqCentroPriceField</zorder>
    <zorder>centerPriceField</zorder>
-   <zorder>centerRightAbvField</zorder>
-   <zorder>centerRightBeerCompanyField</zorder>
-   <zorder>centerRightBeerNameField</zorder>
-   <zorder>centerRightBoughtField</zorder>
-   <zorder>centerRightCityField</zorder>
-   <zorder>centerRightEmptyField</zorder>
-   <zorder>centerRightIbuField</zorder>
-   <zorder>centerRightPriceField</zorder>
+   <zorder>derCentroAbvField</zorder>
+   <zorder>derCentroBeerCompanyField</zorder>
+   <zorder>derCentroBeerNameField</zorder>
+   <zorder>derCentroBoughtField</zorder>
+   <zorder>derCentroCityField</zorder>
+   <zorder>derCentroEmptyField</zorder>
+   <zorder>derCentroIbuField</zorder>
+   <zorder>derCentroPriceField</zorder>
    <zorder>closeButton</zorder>
    <zorder>degreeLabel</zorder>
    <zorder>graphFrame</zorder>
@@ -2984,8 +2984,8 @@ QScrollBar:horizontal, QScrollBar:vertical
    <zorder>leftPriceField</zorder>
    <zorder>percentageLabel</zorder>
    <zorder>remainingCenterField</zorder>
-   <zorder>remainingCenterLeftField</zorder>
-   <zorder>remainingCenterRightField</zorder>
+   <zorder>remainingIzqCentroField</zorder>
+   <zorder>remainingDerCentroField</zorder>
    <zorder>remainingLeftField</zorder>
    <zorder>remainingRightField</zorder>
    <zorder>rightAbvField</zorder>
@@ -3001,9 +3001,9 @@ QScrollBar:horizontal, QScrollBar:vertical
    <zorder>tempLabel</zorder>
    <zorder>uptimeField</zorder>
    <zorder>usersButton</zorder>
-   <zorder>centerLeftBeerNameField</zorder>
-   <zorder>centerLeftBeerCompanyField</zorder>
-   <zorder>centerLeftCityField</zorder>
+   <zorder>izqCentroBeerNameField</zorder>
+   <zorder>izqCentroBeerCompanyField</zorder>
+   <zorder>izqCentroCityField</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

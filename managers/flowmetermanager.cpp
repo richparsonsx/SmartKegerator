@@ -32,9 +32,9 @@ FlowMeterManager::FlowMeterManager()
 {
     gpioWFICommand = Settings::GetString("flowMeterWFICommand");
     leftTickString = QString("Left");
-    centerLeftTickString = QString("CenterLeft");
+    izqCentroTickString = QString("IzqCentro");
     centerTickString = QString("Center");
-    centerRightTickString = QString("CenterRight");
+    derCentroTickString = QString("DerCentro");
     rightTickString = QString("Right");
 
     gpioProc = new QProcess();
@@ -73,11 +73,11 @@ void FlowMeterManager::onFlowMeterData()
     BeerTapSide tapSide = CENTER_TAP;
     if (out.startsWith(leftTickString))
         tapSide = LEFT_TAP;
-    if (out.startsWith(centerLeftTickString))
-        tapSide = CENTER_LEFT_TAP;
-    if (out.startsWith(centerRightTickString))
-        tapSide = CENTER_RIGHT_TAP;
-    if (out.startsWith(rightTickString))
+    else if (out.startsWith(izqCentroTickString))
+        tapSide = IZQ_CENTRO_TAP;
+    else if (out.startsWith(derCentroTickString))
+        tapSide = DER_CENTRO_TAP;
+    else if (out.startsWith(rightTickString))
         tapSide = RIGHT_TAP;
 
     // If we just crossed the threshold, lets start the pour
@@ -97,9 +97,19 @@ void FlowMeterManager::onFlowMeterData()
 void FlowMeterManager::beginPour(BeerTapSide tapSide)
 {
     CurrentTapSide = tapSide;
-    CurrentKeg = CurrentTapSide == RIGHT_TAP ? Keg::RightKeg : CurrentKeg = CurrentTapSide == CENTER_RIGHT_TAP ? Keg::CenterRightKeg : CurrentKeg = CurrentTapSide == LEFT_TAP ? Keg::LeftKeg : CurrentKeg = CurrentTapSide == CENTER_LEFT_TAP ? Keg::CenterLeftKeg : Keg::CenterKeg;
+    // This is less error-prone than a bunch of nested ternary operators
+    switch(CurrentTapSide)
+    {
+        case LEFT_TAP:        	CurrentKeg = Keg::LeftKeg; break;
+        case IZQ_CENTRO_TAP:    CurrentKeg = Keg::IzqCentroKeg; break;
+        case CENTER_TAP:        CurrentKeg = Keg::CenterKeg; break;
+        case DER_CENTRO_TAP:  CurrentKeg = Keg::DerCentroKeg; break;
+        case RIGHT_TAP:         CurrentKeg = Keg::RightKeg; break;
+    }
 
 
+	
+	
     if (CurrentKeg == NULL)
     {
         Ticks = 0;
