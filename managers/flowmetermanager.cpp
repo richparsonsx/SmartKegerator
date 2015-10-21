@@ -32,9 +32,9 @@ FlowMeterManager::FlowMeterManager()
 {
     gpioWFICommand = Settings::GetString("flowMeterWFICommand");
     leftTickString = QString("Left");
-    izqCentroTickString = QString("IzqCentro");
+    izqCentroTickString = QString("Izquierda");
     centerTickString = QString("Center");
-    derCentroTickString = QString("DerCentro");
+    derCentroTickString = QString("Derecha");
     rightTickString = QString("Right");
 
     gpioProc = new QProcess();
