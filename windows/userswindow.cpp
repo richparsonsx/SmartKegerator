@@ -17,7 +17,7 @@
 #include <QCloseEvent>
 #include <QMessageBox>
 #include <QPalette>
-#include <QtConcurrentRun>
+#include <QtConcurrent/QtConcurrentRun>
 #include <managers/facialrecognitionmanager.h>
 #include <managers/flowmetermanager.h>
 #include <managers/gpiomanager.h>

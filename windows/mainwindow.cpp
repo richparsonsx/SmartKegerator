@@ -3,7 +3,7 @@
 #include <data/settings.h>
 #include <data/constants.h>
 #include <managers/tempsensormanager.h>
-#include <QtConcurrentRun>
+#include <QtConcurrent/QtConcurrentRun>
 #include <QCloseEvent>
 #include <QDebug>
 #include <time.h>
