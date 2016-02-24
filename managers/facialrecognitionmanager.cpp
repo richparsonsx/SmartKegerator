@@ -5,7 +5,7 @@
 #include <data/settings.h>
 #include <raspicamcv/raspicvcam.h>
 #include "opencv2/contrib/contrib.hpp"
-#include <QtConcurrentRun>
+#include <QtConcurrent/QtConcurrentRun>
 
 
 CascadeClassifier FacialRecognitionManager::QuickFaceCascade;
