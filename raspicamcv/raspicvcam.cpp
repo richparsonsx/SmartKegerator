@@ -1,7 +1,7 @@
 #include <raspicamcv/raspicvcam.h>
 #include <data/settings.h>
 #include <QLabel>
-#include <QtConcurrentRun>
+#include <QtConcurrent/QtConcurrentRun>
 #include <managers/gpiomanager.h>
 #include <stdio.h>
 #include <stdlib.h>
