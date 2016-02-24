@@ -13,7 +13,7 @@
 #include <data/constants.h>
 #include <data/settings.h>
 #include <QMessageBox>
-#include <QCleanlooksStyle>
+#include <QCommonStyle>
 
 #include "opencv2/core/core.hpp"
 #include "opencv2/contrib/contrib.hpp"
